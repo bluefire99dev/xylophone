@@ -6,11 +6,11 @@ import 'package:audioplayers/audioplayers.dart';
 // import 'package:assets_audio_player/assets_audio_player.dart';
 
 void main() {
-  runApp(const XyloPhone());
+  runApp(XyloPhone());
 }
 
 class XyloPhone extends StatelessWidget {
-  const XyloPhone({super.key});
+  // const XyloPhone({super.key});
 
 //function for sound in button int soundNumber banayvu anf string interpolation kayru arg pass kayru function ma
   void playsound(int soundNumber) {
@@ -22,10 +22,12 @@ class XyloPhone extends StatelessWidget {
   Expanded buidkey({required Color color, required int soundNumber}) {
     return Expanded(
       child: TextButton(
+        // Color: Color,
         onPressed: () {
           playsound(soundNumber);
+
+          // style:TextButton.styleFrom(backgroundColor: Colors.red);
         },
-        // style: TextButton.styleFrom(backgroundColor: Colors.red),
         child: Text("tone-1"),
       ),
     );
